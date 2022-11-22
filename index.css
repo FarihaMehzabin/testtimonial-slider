@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main{
+    width: min(80%, 700px);
+    margin: 0 auto;
+    padding: 10rem 0;
+}
+
+svg{
+    object-fit: cover;
+}
+
+.reviews{
+    
+
+}
+
+.review-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-img{
+    /* position: relative; */
+    /* width: 100%;
+    max-width: 300px; */
+    padding: 2rem 1rem;
+}
+
+.review-img img{
+    /* position: absolute; */
+    /* left: 0;
+    top: 4rem; */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hidden{
+    display: none;
+}
+
+.reviewer-info{
+    padding: 2rem 0;
+    text-align: center;
+}
