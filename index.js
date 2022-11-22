@@ -43,9 +43,6 @@ nextBtn[0].addEventListener("click", function (e) {
   idk1.classList.toggle("hidden");
 
 
-  console.log(idk);
-  console.log(idk1);
-
 
 //   if(nextPic === data.length){
 //     nextPic = 1;
