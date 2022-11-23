@@ -7,15 +7,13 @@ body{
     background: url("/images/pattern-curve.svg");
     background-position: left bottom;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 main{
     width: min(80%, 900px);
     margin: 0 auto;
     padding: 2rem 0;
-    height: 100%;
-
+    padding-bottom: 20rem;
 }
 
 .reviews{
@@ -42,10 +40,11 @@ font-weight: lighter;
     padding: 4rem 1rem;
     padding-bottom: 1rem;
     background: url("/images/pattern-bg.svg");
-    background-size: contain;
+    background-size: 120%;
     background-repeat: no-repeat;
     background-position: center;
-    width: 90%;
+    object-fit: contain;
+    width: 80%;
     display: flex;
     flex-direction: column;
 }
@@ -87,7 +86,8 @@ font-weight: lighter;
     align-self: center;
     padding: .5rem .5rem;
     border-radius: 20px;
-    max-width: 100px;
+    width: 25%;
+    max-width: 80px;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
@@ -95,9 +95,14 @@ font-weight: lighter;
     box-shadow: 1px 1px 10px gray;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
+
     .review-container{
         flex-direction: row;
+    }
+
+    main{
+        padding: 15rem 0;
     }
 
     .review-container>h3{
@@ -105,13 +110,13 @@ font-weight: lighter;
         position: absolute;
         width: 60%;
         font-weight: lighter;
-        left: 45%;
+        left: 50%;
         top: 25%;
         font-size: 1.5rem;
     }
 
     .review-img img{
-      width: 300px;
+      width: 400px;
     }
 
     .reviewer-info{
