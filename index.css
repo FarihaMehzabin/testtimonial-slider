@@ -4,20 +4,18 @@
 }
 
 body{
-    background: linear-gradient(coral, white);
+    background: url("/images/pattern-curve.svg");
+    background-position: left bottom;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 main{
     width: min(80%, 900px);
     margin: 0 auto;
-    padding: 5rem 0;
+    padding: 2rem 0;
     height: 100%;
 
-}
-
-svg{
-    object-fit: cover;
 }
 
 .reviews{
@@ -30,6 +28,7 @@ svg{
     flex-direction: column;
     align-items: center;
     position: relative;
+    justify-content: center;
 }
 
 .review-container>h3{
@@ -40,7 +39,15 @@ font-weight: lighter;
     position: relative;
     /* width: 100%;
     max-width: 300px; */
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
+    padding-bottom: 1rem;
+    background: url("/images/pattern-bg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
 .review-img img{
@@ -48,9 +55,10 @@ font-weight: lighter;
     /* left: 0;
     top: 4rem; */
     width: 100%;
-    height: 100%;
+    display: block;
     object-fit: contain;
     box-shadow: 1px 0px 10px rgb(88, 86, 86);
+    margin: 0 auto;
 }
 
 .hidden{
@@ -60,17 +68,31 @@ font-weight: lighter;
 .reviewer-info{
     padding: 2rem 0;
     text-align: center;
-    
+}
+
+.reviewer-info h4{
+    color: gray;
+    font-weight: 100;
+}
+
+.review-container>h3{
+    background: url("/images/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 110% right 90%;
+    background-size: 20%
+;
 }
 
 .slide{
-    padding: .2rem .5rem;
+    align-self: center;
+    padding: .5rem .5rem;
     border-radius: 20px;
-    max-width: 70px;
+    max-width: 100px;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
-    transform: translate(200%);
+    transform: translate(0,-20px);
+    box-shadow: 1px 1px 10px gray;
 }
 
 @media screen and (min-width: 900px) {
@@ -96,5 +118,9 @@ font-weight: lighter;
         flex: 1 100%;
         align-self: flex-end;
         text-align: right;
+    }
+
+    .slide{
+        align-self: flex-start;
     }
 }
