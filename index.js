@@ -34,14 +34,13 @@ let nextPic = 1;
 let nextBtn = document.getElementsByClassName("next");
 
 nextBtn[0].addEventListener("click", function (e) {
-//   let x = e.target.dataset.rev;
+//    let x = e.target.dataset.rev;
 
   let idk = document.getElementById("review-1");
   let idk1 = document.getElementById("review-2");
-
+  idk1.classList.toggle("anim");
   idk.classList.toggle("hidden");
   idk1.classList.toggle("hidden");
-
 
 
 //   if(nextPic === data.length){
@@ -56,7 +55,9 @@ nextBtn[0].addEventListener("click", function (e) {
 
 //   }
   
-  console.log("ugh")
+  console.log("ugh1")
+   console.log(idk);
+   console.log(idk1);
 
 //   console.log(x,data.length,nextPic);
   
@@ -69,9 +70,12 @@ nextBtn[1].addEventListener("click", function (e) {
   let idk = document.getElementById("review-1");
   let idk1 = document.getElementById("review-2");
 
-    idk.classList.toggle("hidden");
+  idk.classList.toggle("anim");
+  idk1.classList.toggle("anim");
+  idk.classList.toggle("hidden");
   idk1.classList.toggle("hidden");
 
+    console.log("ugh2");
   console.log(idk);
   console.log(idk1);
 
@@ -87,7 +91,7 @@ nextBtn[1].addEventListener("click", function (e) {
 
   //   }
 
-  console.log("ugh");
+
 
   //   console.log(x,data.length,nextPic);
 });

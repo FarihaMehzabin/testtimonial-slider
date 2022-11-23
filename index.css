@@ -16,11 +16,6 @@ main{
     padding-bottom: 20rem;
 }
 
-.reviews{
-    
-
-}
-
 .review-container{
     display: flex;
     flex-direction: column;
@@ -95,23 +90,45 @@ font-weight: lighter;
     box-shadow: 1px 1px 10px gray;
 }
 
+.anim{
+    animation: haha 1s linear both;
+}
+
+@keyframes haha{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    70%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        opacity: 1;
+        box-shadow: 1px 1px 10px gray;
+    }
+}
+
 @media screen and (min-width: 700px) {
 
     .review-container{
         flex-direction: row;
+        padding: 0 2rem;
     }
 
     main{
         padding: 15rem 0;
     }
 
+    .review-container>*{
+        flex: 1 100%;
+    }
+
     .review-container>h3{
-        flex: 2 auto;
-        position: absolute;
+        flex: 2 100%;
         width: 60%;
         font-weight: lighter;
-        left: 50%;
-        top: 25%;
         font-size: 1.5rem;
     }
 
@@ -120,7 +137,7 @@ font-weight: lighter;
     }
 
     .reviewer-info{
-        flex: 1 100%;
+        flex: 1;
         align-self: flex-end;
         text-align: right;
     }
